@@ -1,0 +1,32 @@
+/* =============
+    Plans
+============= */
+#plans {
+    #plans-heading {
+        margin: 181px 478px 30px;
+    }
+
+    #monthly-yearly-toggle {
+        margin-bottom: 60px;
+    }
+
+    .package-option {
+        border: 1px solid var(--gray);
+        border-radius: 10px;
+        display: inline-block;
+
+        .heading-price {
+            margin: 50px 92px 0px 90px;
+        }
+
+        a {
+            color: var(--black);
+            text-decoration: none;
+        }
+
+        ul {
+            margin: 40px 102px 0px 101px;
+            list-style-type: none;
+        }
+    }
+}

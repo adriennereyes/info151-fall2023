@@ -13,6 +13,10 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
+  --purple: #5319A6;
+  --baby-blue: #42B4EE;
+  --baby-blue-trans: #42B4EE10;
+  --gray: #9090A7;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -334,9 +338,33 @@ template {
 /* =============
     Typography
 ============= */
+h1, h2, h3, h4, h5 {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 /* =============
     Buttons
 ============= */
+.try-package-btn {
+  color: var(--baby-blue);
+  padding: 15px 30px;
+  margin: 40px 69px 50px 68px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--baby-blue-trans);
+}
+
 /* =============
     Forms
 ============= */
@@ -366,3 +394,28 @@ textarea {
 /* =============
     Footer
 ============= */
+/* =============
+    Plans
+============= */
+#plans #plans-heading {
+  margin: 181px 478px 30px;
+}
+#plans #monthly-yearly-toggle {
+  margin-bottom: 60px;
+}
+#plans .package-option {
+  border: 1px solid var(--gray);
+  border-radius: 10px;
+  display: inline-block;
+}
+#plans .package-option .heading-price {
+  margin: 50px 92px 0px 90px;
+}
+#plans .package-option a {
+  color: var(--black);
+  text-decoration: none;
+}
+#plans .package-option ul {
+  margin: 40px 102px 0px 101px;
+  list-style-type: none;
+}
