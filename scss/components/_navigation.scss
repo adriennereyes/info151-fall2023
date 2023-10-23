@@ -1,3 +1,15 @@
 /* =============
     Navigation
 ============= */
+a {
+    color: var(--white);
+    text-decoration: none;
+    &:focus {
+        color: var(--baby-blue);
+        text-decoration: underline;
+    }
+}
+
+ul {
+    list-style-type: none;
+}
