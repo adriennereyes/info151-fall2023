@@ -3,30 +3,86 @@
 ============= */
 #plans {
     #plans-heading {
-        margin: 181px 478px 30px;
+        margin: 181px 0px 30px;
+        text-align: center;
+        h1 {
+            font-size: rem-calc(44);
+            font-weight: 600;
+        }
     }
 
     #monthly-yearly-toggle {
+        display: flex;
+        justify-content: center;
         margin-bottom: 60px;
+
+        p {
+            font-size: rem-calc(22);
+            font-weight: 500;
+        }
+
+        p#monthly {
+            margin-right: 18px;
+        }
+
+        p#yearly {
+            margin-left: 15px;
+        }
     }
 
-    .package-option {
-        border: 1px solid var(--gray);
-        border-radius: 10px;
-        display: inline-block;
+    #package-options {
+        display: flex;
+        justify-content: space-evenly;
+        .package-option {
+            width: 360px;
+            height: 480px;
+            border: 1px solid var(--gray);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
 
-        .heading-price {
-            margin: 50px 92px 0px 90px;
+            .option-name {
+                text-align: center;
+                margin-top: 50px;
+                margin-bottom: 20px;
+                h4 {
+                    font-size: rem-calc(22);
+                    font-weight: 500;
+                }
+            }
+
+            .option-price {
+                margin-bottom: 40px;
+                h2 {
+                    font-size: rem-calc(44);
+                    font-weight: 600;
+                }
+            }
+
+            .option-perks {
+                list-style-type: none;
+                li:not(:last-child) {
+                    font-size: rem-calc(16);
+                    font-weight: 400;
+                    margin-bottom: 10px;
+                }
+            }
         }
 
-        a {
-            color: var(--black);
-            text-decoration: none;
-        }
+        .selected {
+            .option-header {
+                color: var(--white);
+                background-color: var(--purple);
+            }
 
-        ul {
-            margin: 40px 102px 0px 101px;
-            list-style-type: none;
+            .try-package-btn {
+                color: var(--white);
+                background-color: var(--baby-blue);
+            }
+
+            border-color: var(--purple);
         }
     }
 }

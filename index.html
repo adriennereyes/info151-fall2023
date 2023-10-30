@@ -8,8 +8,14 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
     <link rel="manifest" href="img/favicon/site.webmanifest">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/styles.css">
-    <title>Week 4 - Plans</title>
+    <title>Week 5 - Plans</title>
 </head>
 
 <body>
@@ -18,54 +24,60 @@
             <h1>Choose your best pricing plan</h1>
         </div>
         <div id="monthly-yearly-toggle">
-            <p>Added for Monthly</p>
+            <p id="monthly">Added for Monthly</p>
             <input type="checkbox">
-            <p>Yearly</p>
+            <p id="yearly">Yearly</p>
         </div>
         <div id="package-options">
             <div class="package-option" >
-                <a id="start-up" href="#">
-                    <div class="heading-price">
+                <div class="option-header" id="start-up">
+                    <div class="option-name">
                         <h4>Start-up</h4>
+                    </div>
+                    <div class="option-price">
                         <h2>$10/mo</h2>
                     </div>
-                    <ul>
-                        <li>Easy Customizable</li>
-                        <li>Commerical license</li>
-                        <li>Single user license</li>
-                        <li>Hotline support 24/7</li>
-                    </ul>
-                </a>
+                </div>
+                <ul class="option-perks">
+                    <li>Easy Customizable</li>
+                    <li>Commerical license</li>
+                    <li>Single user license</li>
+                    <li>Hotline support 24/7</li>
+                </ul>
                 <button class="try-package-btn" type="button">TRY THIS PACKAGE</button>
             </div>
-            <div class="package-option">
-                <a class="classic" href="#">
-                    <div class="heading-price">
+            <div class="package-option selected" id="classic">
+                <div class="option-header">
+                    <div class="option-name">
                         <h4>Classic</h4>
+                    </div>
+                    <div class="option-price">
                         <h2>$30/mo</h2>
                     </div>
-                    <ul>
-                        <li>Easy Customizable</li>
-                        <li>Commerical license</li>
-                        <li>5 user license</li>
-                        <li>Hotline support 24/7</li>
-                    </ul>
-                </a>
+                </div>
+                <ul class="option-perks">
+                    <li>Easy Customizable</li>
+                    <li>Commerical license</li>
+                    <li>5 user license</li>
+                    <li>Hotline support 24/7</li>
+                </ul>
                 <button class="try-package-btn" type="button">TRY THIS PACKAGE</button>
             </div>
-            <div class="package-option">
-                <a class="premium" href="#">
-                    <div class="heading-price">
+            <div class="package-option" id="premium">
+                <div class="option-header">
+                    <div class="option-name">
                         <h4>Premium</h4>
+                    </div>
+                    <div class="option-price">
                         <h2>$49/mo</h2>
                     </div>
-                    <ul>
-                        <li>Easy Customizable</li>
-                        <li>Commerical license</li>
-                        <li>10 user license</li>
-                        <li>Hotline support 24/7</li>
-                    </ul>
-                </a>
+                </div>
+                <ul class="option-perks">
+                    <li>Easy Customizable</li>
+                    <li>Commerical license</li>
+                    <li>10 user license</li>
+                    <li>Hotline support 24/7</li>
+                </ul>
                 <button class="try-package-btn" type="button">TRY THIS PACKAGE</button>
             </div>
         </div>

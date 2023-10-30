@@ -8,4 +8,10 @@
     border: none;
     border-radius: 5px;
     background-color: var(--baby-blue-trans);
+    &:hover {
+        color: var(--white);
+        background-color: var(--baby-blue);
+    }
+    font-size: rem-calc(16);
+    font-weight: 500;
 }

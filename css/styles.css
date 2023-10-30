@@ -338,6 +338,10 @@ template {
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Inter", sans-serif;
+}
+
 h1, h2, h3, h4, h5 {
   padding: 0;
   margin: 0;
@@ -363,6 +367,12 @@ ul {
   border: none;
   border-radius: 5px;
   background-color: var(--baby-blue-trans);
+  font-size: 1rem;
+  font-weight: 500;
+}
+.try-package-btn:hover {
+  color: var(--white);
+  background-color: var(--baby-blue);
 }
 
 /* =============
@@ -398,24 +408,89 @@ textarea {
     Plans
 ============= */
 #plans #plans-heading {
-  margin: 181px 478px 30px;
+  margin: 181px 0px 30px;
+  text-align: center;
+}
+#plans #plans-heading h1 {
+  font-size: 2.75rem;
+  font-weight: 600;
 }
 #plans #monthly-yearly-toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 60px;
 }
-#plans .package-option {
+#plans #monthly-yearly-toggle p {
+  font-size: 1.375rem;
+  font-weight: 500;
+}
+#plans #monthly-yearly-toggle p#monthly {
+  margin-right: 18px;
+}
+#plans #monthly-yearly-toggle p#yearly {
+  margin-left: 15px;
+}
+#plans #package-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+#plans #package-options .package-option {
+  width: 360px;
+  height: 480px;
   border: 1px solid var(--gray);
   border-radius: 10px;
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
-#plans .package-option .heading-price {
-  margin: 50px 92px 0px 90px;
+#plans #package-options .package-option .option-name {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
-#plans .package-option a {
-  color: var(--black);
-  text-decoration: none;
+#plans #package-options .package-option .option-name h4 {
+  font-size: 1.375rem;
+  font-weight: 500;
 }
-#plans .package-option ul {
-  margin: 40px 102px 0px 101px;
+#plans #package-options .package-option .option-price {
+  margin-bottom: 40px;
+}
+#plans #package-options .package-option .option-price h2 {
+  font-size: 2.75rem;
+  font-weight: 600;
+}
+#plans #package-options .package-option .option-perks {
   list-style-type: none;
+}
+#plans #package-options .package-option .option-perks li:not(:last-child) {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+#plans #package-options .selected {
+  border-color: var(--purple);
+}
+#plans #package-options .selected .option-header {
+  color: var(--white);
+  background-color: var(--purple);
+}
+#plans #package-options .selected .try-package-btn {
+  color: var(--white);
+  background-color: var(--baby-blue);
 }
