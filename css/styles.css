@@ -340,6 +340,10 @@ body {
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Inter", sans-serif;
+}
+
 h1, h2, h3, h4, h5 {
   padding: 0;
   margin: 0;
@@ -364,6 +368,8 @@ ul {
   border: none;
   border-radius: 0px 5px 5px 0px;
   padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 /* =============
@@ -399,24 +405,86 @@ footer {
   color: var(--white);
   padding-top: 100px;
 }
-footer div h3 {
-  margin-bottom: 30px;
+footer #footer-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
-footer div form {
-  margin-top: 25px;
+footer #footer-top #footer-logo-socials {
+  width: 288px;
+  height: 230px;
 }
-footer ul {
+footer #footer-top #footer-logo-socials img {
+  margin-bottom: 30.17px;
+}
+footer #footer-top #footer-logo-socials p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+footer #footer-top #footer-logo-socials ul {
+  margin-top: 30px;
   list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
-footer ul li a {
+footer #footer-top #footer-logo-socials ul li {
+  margin-right: 25px;
+}
+footer #footer-top #footer-logo-socials ul li a {
   color: var(--white);
   text-decoration: none;
+}
+footer #footer-top .footer-sections ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+footer #footer-top .footer-sections ul li {
+  margin-bottom: 10px;
+}
+footer #footer-top .footer-sections ul li a {
+  color: var(--white);
+  text-decoration: none;
+}
+footer #footer-top .footer-sections h3 {
+  margin-bottom: 30px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.375rem;
+  font-weight: 500;
+}
+footer #footer-top .footer-sections form {
+  margin-top: 25px;
+}
+footer hr {
+  margin-top: 80px;
 }
 footer #copyright {
   margin-top: 30px;
   margin-bottom: 35px;
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 500;
 }
 footer #email {
+  font-size: 1rem;
+  font-weight: 400;
   background-color: var(--black);
   color: var(--white);
   border-radius: 5px 0px 0px 5px;
