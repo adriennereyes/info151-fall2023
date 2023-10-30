@@ -435,6 +435,10 @@ nav ul li a.selected {
 nav ul #free-trial-btn {
   margin-left: 60px;
 }
+nav ul #free-trial-btn button {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
 
 /* =============
     Header
@@ -457,23 +461,27 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
-#hero #hero-heading {
+#hero #hero-text-btn-container #hero-heading {
   width: 498px;
 }
-#hero #hero-heading h1 {
+#hero #hero-text-btn-container #hero-heading h1 {
   color: var(--white);
   font-size: 3.875rem;
   font-weight: 600;
 }
-#hero #hero-description {
+#hero #hero-text-btn-container #hero-description {
   width: 435px;
 }
-#hero #hero-description p {
+#hero #hero-text-btn-container #hero-description p {
   font-size: 1.125rem;
   font-weight: 400;
   color: var(--white);
   margin-top: 25px;
   margin-bottom: 35px;
+}
+#hero #hero-text-btn-container #try-live-demo-btn {
+  font-size: 1.25rem;
+  font-weight: 500;
 }
 #hero #hero-img {
   margin-right: 83.3px;

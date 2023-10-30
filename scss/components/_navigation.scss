@@ -34,6 +34,10 @@ nav {
 
         #free-trial-btn {
             margin-left: 60px;
+            button {
+                font-size: rem-calc(18);
+                font-weight: 500;
+            }
         }
         
     }
