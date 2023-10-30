@@ -2,12 +2,30 @@
     Hero
 ============= */
 #hero {
-    h1 {
-        color: var(--white);
+    display: flex;
+    align-items: center;
+
+    #hero-heading {
+        width: 498px;
+        h1 {
+            color: var(--white);
+            font-size: rem-calc(62);
+            font-weight: 600;
+        }
     }
-    p {
-        color: var(--white);
-        margin-top: 25px;
-        margin-bottom: 35px;
+
+    #hero-description {
+        width: 435px;
+        p {
+            font-size: rem-calc(18);
+            font-weight: 400;
+            color: var(--white);
+            margin-top: 25px;
+            margin-bottom: 35px;
+        }
+    }
+
+    #hero-img {
+        margin-right: 83.3px;
     }
 }

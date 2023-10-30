@@ -8,6 +8,12 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
     <link rel="manifest" href="img/favicon/site.webmanifest">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/styles.css">
     <title>Week 4 - Hero</title>
 </head>
@@ -16,23 +22,38 @@
     <header>
         <a href="#"><img src="/img/logo.png" alt=""></a>
         <nav>
-
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Testimonials</a></li>
-                <li><a href="#">Blog</a></li>
+                <li>
+                    <a class="selected" href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Pricing</a>
+                </li>
+                <li>
+                    <a href="#">Testimonials</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li id="free-trial-btn">
+                    <button class="baby-blue-btn" type="button">FREE TRIAL</button>
+                </li>
             </ul>
         </nav>
-        <button class="baby-blue-btn" type="button">FREE TRIAL</button>
     </header>
     <section id="hero">
-        <section>
-            <h1>Codext one of the best system in SAAS.</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A nulla nulla etiam turpis quam diam et. Arcu nisi, sed aenean sit nisl.</p>
+        <div id="hero-text-btn-container">
+            <div id="hero-heading">
+                <h1>Codext one of the best system in SAAS.</h1>
+            </div>
+            <div id="hero-description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A nulla nulla etiam turpis quam diam et. Arcu nisi, sed aenean sit nisl.</p>
+            </div>
             <button class="baby-blue-btn" type="button">Try A Live Demo</button>
-        </section>
+        </div>
         <div id="hero-img">
             <img src="/img/hero.png" alt="">
         </div>

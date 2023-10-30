@@ -340,6 +340,10 @@ body {
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Inter", sans-serif;
+}
+
 h1, h2, h3, h4, h5 {
   padding: 0;
   margin: 0;
@@ -364,6 +368,10 @@ ul {
   padding: 15px 30px;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
+}
+.baby-blue-btn:hover {
+  color: var(--purple);
 }
 
 /* =============
@@ -389,17 +397,43 @@ textarea {
 /* =============
     Navigation
 ============= */
-a {
+nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+nav ul li {
+  margin-left: 40px;
+}
+nav ul li a:link, nav ul li a:visited {
   color: var(--white);
   text-decoration: none;
+  font-size: 1.125rem;
+  font-weight: 400;
+  -webkit-transition: 0.25;
+  transition: 0.25;
 }
-a:focus {
+nav ul li a:hover, nav ul li a:active, nav ul li a:focus {
   color: var(--baby-blue);
   text-decoration: underline;
+  font-size: 1.125rem;
+  font-weight: 500;
 }
-
-ul {
-  list-style-type: none;
+nav ul li a.selected {
+  color: var(--baby-blue);
+  text-decoration: underline;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+nav ul #free-trial-btn {
+  margin-left: 60px;
 }
 
 /* =============
@@ -415,11 +449,32 @@ header {
 /* =============
     Hero
 ============= */
-#hero h1 {
-  color: var(--white);
+#hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-#hero p {
+#hero #hero-heading {
+  width: 498px;
+}
+#hero #hero-heading h1 {
+  color: var(--white);
+  font-size: 3.875rem;
+  font-weight: 600;
+}
+#hero #hero-description {
+  width: 435px;
+}
+#hero #hero-description p {
+  font-size: 1.125rem;
+  font-weight: 400;
   color: var(--white);
   margin-top: 25px;
   margin-bottom: 35px;
+}
+#hero #hero-img {
+  margin-right: 83.3px;
 }
