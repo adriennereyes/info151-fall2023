@@ -333,8 +333,13 @@ template {
 /* =============
     Base
 ============= */
-body {
-  background-color: var(--black);
+#validation-btn {
+  margin-top: 10px;
+  text-align: center;
+}
+
+a {
+  display: inline-block;
 }
 
 /* =============
@@ -402,29 +407,38 @@ textarea {
     Footer
 ============= */
 footer {
+  background-color: var(--black);
   color: var(--white);
   padding-top: 100px;
 }
 footer #footer-top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1140px auto;
+  grid-template-columns: auto 1140px auto;
+      grid-template-areas: ". footer-content .";
 }
-footer #footer-top #footer-logo-socials {
+footer #footer-top #footer-grid-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: footer-content;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33% 15% 21% 31%;
+  grid-template-columns: 33% 15% 21% 31%;
+}
+footer #footer-top #footer-grid-item #footer-logo-socials {
   width: 288px;
   height: 230px;
 }
-footer #footer-top #footer-logo-socials img {
+footer #footer-top #footer-grid-item #footer-logo-socials img {
   margin-bottom: 30.17px;
 }
-footer #footer-top #footer-logo-socials p {
+footer #footer-top #footer-grid-item #footer-logo-socials p {
   font-size: 1rem;
   font-weight: 400;
 }
-footer #footer-top #footer-logo-socials ul {
+footer #footer-top #footer-grid-item #footer-logo-socials ul {
   margin-top: 30px;
   list-style-type: none;
   display: -webkit-box;
@@ -434,14 +448,33 @@ footer #footer-top #footer-logo-socials ul {
       -ms-flex-pack: start;
           justify-content: start;
 }
-footer #footer-top #footer-logo-socials ul li {
+footer #footer-top #footer-grid-item #footer-logo-socials ul li {
   margin-right: 25px;
 }
-footer #footer-top #footer-logo-socials ul li a {
+footer #footer-top #footer-grid-item #footer-logo-socials ul li a:link, footer #footer-top #footer-grid-item #footer-logo-socials ul li :visited {
   color: var(--white);
   text-decoration: none;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  height: 41px;
+  width: 41px;
+  border: 1px var(--white) solid;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-footer #footer-top .footer-sections ul {
+footer #footer-top #footer-grid-item #footer-logo-socials ul li a:hover, footer #footer-top #footer-grid-item #footer-logo-socials ul li a:active {
+  background-color: var(--baby-blue);
+  border: 1px var(--baby-blue) solid;
+}
+footer #footer-top #footer-grid-item .footer-sections ul {
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -456,28 +489,37 @@ footer #footer-top .footer-sections ul {
   font-size: 1.125rem;
   font-weight: 400;
 }
-footer #footer-top .footer-sections ul li {
+footer #footer-top #footer-grid-item .footer-sections ul li {
   margin-bottom: 10px;
 }
-footer #footer-top .footer-sections ul li a {
+footer #footer-top #footer-grid-item .footer-sections ul li a:link, footer #footer-top #footer-grid-item .footer-sections ul li a:visited {
   color: var(--white);
   text-decoration: none;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
 }
-footer #footer-top .footer-sections h3 {
+footer #footer-top #footer-grid-item .footer-sections ul li a:hover, footer #footer-top #footer-grid-item .footer-sections ul li a:active {
+  color: var(--baby-blue);
+}
+footer #footer-top #footer-grid-item .footer-sections h3 {
   margin-bottom: 30px;
   font-family: "Poppins", sans-serif;
   font-size: 1.375rem;
   font-weight: 500;
 }
-footer #footer-top .footer-sections form {
+footer #footer-top #footer-grid-item .footer-sections form {
   margin-top: 25px;
+}
+footer #footer-top #footer-grid-item .footer-sections p {
+  padding-right: 100px;
 }
 footer hr {
   margin-top: 80px;
+  width: 1140px;
 }
 footer #copyright {
   margin-top: 30px;
-  margin-bottom: 35px;
+  padding-bottom: 35px;
   text-align: center;
   font-size: 1.125rem;
   font-weight: 500;

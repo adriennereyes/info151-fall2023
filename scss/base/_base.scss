@@ -1,7 +1,11 @@
 /* =============
     Base
 ============= */
+#validation-btn {
+    margin-top: 10px;
+    text-align: center;
+}
 
-body {
-    background-color: var(--black);
+a {
+    display: inline-block;
 }
