@@ -335,6 +335,24 @@ template {
 /* =============
     Base
 ============= */
+body main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1140px auto;
+  grid-template-columns: auto 1140px auto;
+      grid-template-areas: ". main-content .";
+}
+body main #main-grid-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: main-content;
+}
+
+#validation-btn {
+  text-align: center;
+  margin-top: 10px;
+}
+
 /* =============
     Typography
 ============= */
@@ -435,12 +453,11 @@ textarea {
   margin-left: 15px;
 }
 #plans #package-options {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
 #plans #package-options .package-option {
   width: 360px;
