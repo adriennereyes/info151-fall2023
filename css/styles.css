@@ -550,3 +550,6 @@ footer #email::placeholder {
 footer #email:-ms-input-placeholder { /* Edge 12 -18 */
   color: var(--white);
 }
+footer #send-btn {
+  cursor: pointer;
+}
