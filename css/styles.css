@@ -336,6 +336,22 @@ template {
 body {
   background-color: var(--purple);
 }
+body main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1140px auto;
+  grid-template-columns: auto 1140px auto;
+      grid-template-areas: ". main-grid-item .";
+}
+body main #main-grid-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: main-grid-item;
+}
+
+#validation-btn {
+  text-align: center;
+}
 
 /* =============
     Typography
@@ -444,7 +460,19 @@ nav ul #free-trial-btn button {
     Header
 ============= */
 header {
-  margin: 40px 230px 78px;
+  margin: 40px 0px 78px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% auto;
+  grid-template-columns: 20% auto;
+}
+header #logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* =============

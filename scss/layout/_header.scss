@@ -2,5 +2,13 @@
     Header
 ============= */
 header {
-    margin: 40px 230px 78px;
+    margin: 40px 0px 78px;
+    display: grid;
+    grid-template-columns: 20% auto;
+
+    #logo-container {
+        display: flex;
+        align-items: center;
+    }
+
 }
