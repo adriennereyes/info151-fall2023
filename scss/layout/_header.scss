@@ -1,3 +1,58 @@
 /* =============
     Header
 ============= */
+header {
+    padding: 24px 24px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "logo burger"
+    "nav nav"
+    "btns btns";
+
+    #logo-container {
+        display: flex;
+        align-items: center;
+        grid-area: logo;
+    }
+
+    #burger-container {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        grid-area: burger;
+    }
+
+    nav {
+        // see navigation partial for scss
+        grid-area: nav;
+    }
+
+    #sign-in-up-btns-container {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        grid-area: btns;
+
+        button {
+            margin-top: 25px;
+            border-radius: 8px;
+            padding: 16px 24px;
+            font-size: rem-calc(18);
+            font-weight: 400;
+        }
+
+        #sign-in-btn {
+            background-color: var(--aqua-green);
+            color: var(--white);
+            margin-right: 16px;
+            
+        }
+
+        #sign-up-btn {
+            background-color: var(--white);
+            color: var(--aqua-green);
+            border-color: var(--aqua-green);
+        }
+    }
+}
