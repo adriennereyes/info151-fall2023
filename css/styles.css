@@ -423,7 +423,7 @@ nav ul li a:hover, nav ul li a:active {
     Header
 ============= */
 header {
-  padding: 24px 24px;
+  padding: 24px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 50% 50%;
