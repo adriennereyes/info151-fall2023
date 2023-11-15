@@ -331,6 +331,11 @@ template {
 /* =============
     Base
 ============= */
+#validation-btn {
+  text-align: center;
+  margin-top: 50px;
+}
+
 /* =============
     Typography
 ============= */
@@ -366,3 +371,12 @@ textarea {
 /* =============
     Footer
 ============= */
+/* =============
+    Hero
+============= */
+#hero {
+  background-image: url("/img/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
