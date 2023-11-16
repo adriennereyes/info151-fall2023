@@ -46,6 +46,10 @@ header {
         grid-area: nav;
     }
 
+    .showBtns {
+        display: flex !important;
+    }
+
     #sign-in-up-btns-container {
         display: none;
         justify-content: end;
