@@ -18,6 +18,12 @@ header {
         "nav nav nav"
     }
 
+    @include xl {
+        grid-template-columns: 20% auto 30%;
+        grid-template-areas: 
+        "logo nav btns"
+    }
+
     #logo-container {
         display: flex;
         align-items: center;
@@ -29,6 +35,10 @@ header {
         justify-content: end;
         align-items: center;
         grid-area: burger;
+
+        @include xl {
+            display: none;
+        }
     }
 
     nav {
@@ -37,10 +47,18 @@ header {
     }
 
     #sign-in-up-btns-container {
-        display: flex;
+        display: none;
         justify-content: end;
         align-items: center;
         grid-area: btns;
+
+        @include md {
+            display: flex;
+        }
+
+        @include xl {
+            display: flex;
+        }
 
         button {
             margin-top: 25px;

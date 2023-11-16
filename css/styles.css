@@ -391,6 +391,14 @@ a {
   text-decoration: none;
 }
 
+nav {
+  display: none;
+}
+@media (min-width: 1200px) {
+  nav {
+    display: block;
+  }
+}
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -402,6 +410,21 @@ nav ul {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+@media (min-width: 1200px) {
+  nav ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
 }
 nav ul li {
   font-size: 1.125rem;
@@ -437,6 +460,13 @@ header {
         grid-template-areas: "logo btns burger" "nav nav nav";
   }
 }
+@media (min-width: 1200px) {
+  header {
+    -ms-grid-columns: 20% auto 30%;
+    grid-template-columns: 20% auto 30%;
+        grid-template-areas: "logo nav btns";
+  }
+}
 header #logo-container {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -462,6 +492,11 @@ header #burger-container {
           align-items: center;
   grid-area: burger;
 }
+@media (min-width: 1200px) {
+  header #burger-container {
+    display: none;
+  }
+}
 header nav {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -472,9 +507,7 @@ header #sign-in-up-btns-container {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
@@ -501,6 +534,36 @@ header #sign-in-up-btns-container {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
+  }
+}
+@media (min-width: 1200px) {
+  header #logo-container {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  header nav {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+  }
+  header #sign-in-up-btns-container {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+  }
+}
+@media (min-width: 768px) {
+  header #sign-in-up-btns-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media (min-width: 1200px) {
+  header #sign-in-up-btns-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 header #sign-in-up-btns-container button {
