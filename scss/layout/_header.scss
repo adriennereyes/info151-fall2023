@@ -2,13 +2,21 @@
     Header
 ============= */
 header {
-    padding: 24px;
+    padding: 22.5px 24px;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-areas: 
     "logo burger"
     "nav nav"
     "btns btns";
+
+    @include md {
+        padding: 12px 24px;
+        grid-template-columns: 50% auto 4%;
+        grid-template-areas: 
+        "logo btns burger"
+        "nav nav nav"
+    }
 
     #logo-container {
         display: flex;
@@ -40,13 +48,16 @@ header {
             padding: 16px 24px;
             font-size: rem-calc(18);
             font-weight: 400;
+            @include md {
+                margin-top: 0px;
+            }
         }
 
         #sign-in-btn {
             background-color: var(--aqua-green);
             color: var(--white);
             margin-right: 16px;
-            
+            border: none;
         }
 
         #sign-up-btn {

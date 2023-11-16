@@ -413,7 +413,6 @@ nav ul li a:link, nav ul li a:visited {
   color: var(--gray);
   -webkit-transition: 0.25s;
   transition: 0.25s;
-  border-bottom: 1px var(--gray) solid;
 }
 nav ul li a:hover, nav ul li a:active {
   color: var(--black);
@@ -423,12 +422,20 @@ nav ul li a:hover, nav ul li a:active {
     Header
 ============= */
 header {
-  padding: 24px;
+  padding: 22.5px 24px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 50% 50%;
   grid-template-columns: 50% 50%;
       grid-template-areas: "logo burger" "nav nav" "btns btns";
+}
+@media (min-width: 768px) {
+  header {
+    padding: 12px 24px;
+    -ms-grid-columns: 50% auto 4%;
+    grid-template-columns: 50% auto 4%;
+        grid-template-areas: "logo btns burger" "nav nav nav";
+  }
 }
 header #logo-container {
   -ms-grid-row: 1;
@@ -476,6 +483,26 @@ header #sign-in-up-btns-container {
           align-items: center;
   grid-area: btns;
 }
+@media (min-width: 768px) {
+  header #logo-container {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  header #burger-container {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  header nav {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+  header #sign-in-up-btns-container {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+  }
+}
 header #sign-in-up-btns-container button {
   margin-top: 25px;
   border-radius: 8px;
@@ -483,10 +510,16 @@ header #sign-in-up-btns-container button {
   font-size: 1.125rem;
   font-weight: 400;
 }
+@media (min-width: 768px) {
+  header #sign-in-up-btns-container button {
+    margin-top: 0px;
+  }
+}
 header #sign-in-up-btns-container #sign-in-btn {
   background-color: var(--aqua-green);
   color: var(--white);
   margin-right: 16px;
+  border: none;
 }
 header #sign-in-up-btns-container #sign-up-btn {
   background-color: var(--white);
