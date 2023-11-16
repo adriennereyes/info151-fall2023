@@ -1,0 +1,1 @@
+var mainNav=document.getElementById("mainNav"),burgerBtn=document.getElementById("burgerBtn"),navOpen=!1;function showNav(){navOpen?(mainNav.classList.remove("showMainNav"),navOpen=!1):(mainNav.classList.add("showMainNav"),navOpen=!0)}burgerBtn.addEventListener("click",showNav);

@@ -364,6 +364,17 @@ p {
 /* =============
     Buttons
 ============= */
+#burgerBtn {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
 /* =============
     Forms
 ============= */
@@ -387,19 +398,23 @@ textarea {
 /* =============
     Navigation
 ============= */
+.showMainNav {
+  display: block !important;
+}
+
 a {
   text-decoration: none;
 }
 
-nav {
+#mainNav {
   display: none;
 }
 @media (min-width: 1200px) {
-  nav {
+  #mainNav {
     display: block;
   }
 }
-nav ul {
+#mainNav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -412,7 +427,7 @@ nav ul {
           align-items: flex-end;
 }
 @media (min-width: 1200px) {
-  nav ul {
+  #mainNav ul {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -426,18 +441,18 @@ nav ul {
     height: 100%;
   }
 }
-nav ul li {
+#mainNav ul li {
   font-size: 1.125rem;
   font-weight: 400;
 }
-nav ul li a:link, nav ul li a:visited {
+#mainNav ul li a:link, #mainNav ul li a:visited {
   padding: 25px 0px;
   display: inline-block;
   color: var(--gray);
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
-nav ul li a:hover, nav ul li a:active {
+#mainNav ul li a:hover, #mainNav ul li a:active {
   color: var(--black);
 }
 

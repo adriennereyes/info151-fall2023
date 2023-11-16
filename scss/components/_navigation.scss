@@ -1,11 +1,15 @@
 /* =============
     Navigation
 ============= */
+.showMainNav {
+    display: block !important;
+}
+
 a {
     text-decoration: none;
 }
 
-nav {
+#mainNav {
     display: none;
     
     @include xl {
