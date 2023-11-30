@@ -704,7 +704,7 @@ header #sign-in-up-btns-container #sign-up-btn:hover {
           box-sizing: border-box;
   border-radius: 8px;
 }
-#sign-in-modal form #close-btn-container {
+#sign-in-modal form #close-btn-sign-in-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -771,7 +771,7 @@ header #sign-in-up-btns-container #sign-up-btn:hover {
           box-sizing: border-box;
   border-radius: 8px;
 }
-#sign-up-modal form #close-btn-container {
+#sign-up-modal form #close-btn-sign-up-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
