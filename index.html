@@ -16,17 +16,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/styles.css">
-    <title>Week 7 - Responsive Navigation - JS</title>
+    <title>Week 8/9 - Sign In Modal</title>
 </head>
 
 <body>
+    <div id="sign-in-modal">
+        <form action="#">
+            <div id="close-btn-container">
+                <button class="close-btn" id="close-btn-sign-in"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <input type="text" placeholder="Username">
+            <input type="text" placeholder="Password">
+            <div id="sign-in-btn-container">
+                <button>Sign In</button>
+            </div>
+        </form>
+    </div>
+
     <header>
         <div id="logo-container">
             <img src="/img/logo.svg" alt="logo for website">
         </div>
         <div id="burger-container">
             <button id="burgerBtn">
-                <i class="fa-solid fa-burger"></i>
+                <i class="fa-solid fa-burger" id="burger"></i>
+                <i class="fa-solid fa-xmark hide-burger-close" id="burger-close"></i>
             </button>
         </div>
         <nav id="mainNav">
@@ -44,7 +58,7 @@
     </header>
     <section id="hero"></section>
     <div id="validation-btn">
-        <a href="https://validator.w3.org/nu/?doc=https://week-7-nav-JS--info151-are53.netlify.app/" target="_blank">
+        <a href="https://validator.w3.org/nu/?doc=https://week-8/9-signin-modal--info151-are53.netlify.app/" target="_blank">
             <img src="img/html-logo.svg" alt="Valid HTML 5">
         </a>
     </div>

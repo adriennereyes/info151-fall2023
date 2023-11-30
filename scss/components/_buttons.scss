@@ -1,6 +1,12 @@
 /* =============
     Buttons
 ============= */
+button{
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
 #burgerBtn {
     border: none;
     background-color: transparent;
@@ -8,6 +14,13 @@
     margin: 0;
 }
 
-button {
-    cursor: pointer;
+.close-btn {
+    background-color: var(--red);
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
 }

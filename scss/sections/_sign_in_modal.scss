@@ -1,0 +1,57 @@
+/* =============
+    Sign In Modal
+============= */
+#sign-in-modal {
+    display: none;
+    background-color: #024A58B3;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+
+    form {
+        background-color: #024A58CC;
+        padding: 24px;
+        box-sizing: border-box;
+        border-radius: 8px;
+
+        #close-btn-container {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 24px;
+        }
+
+        input {
+            width: 100%;
+            box-sizing: border-box;
+            height: 60px;
+            margin-bottom: 24px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        #sign-in-btn-container {
+            display: flex;
+            justify-content: flex-end;
+
+            button {
+                border: 1px solid var(--white);
+                padding: 16px 24px;
+                background-color: var(--light-green);
+                color: var(--white);
+                transition: 0.25s;
+                border-radius: 8px;
+                font-size: rem-calc(18);
+                font-weight: 400;
+            }
+    
+            button:hover {
+                background-color: var(--gray);
+            }
+        }
+    }
+
+}

@@ -80,12 +80,25 @@ header {
             color: var(--white);
             margin-right: 16px;
             border: none;
+            transition: 0.25s;
+        }
+
+        #sign-in-btn:hover {
+            background-color: var(--light-green);
         }
 
         #sign-up-btn {
             background-color: var(--white);
             color: var(--aqua-green);
             border-color: var(--aqua-green);
+            border: 1px solid var(--aqua-green);
+            transition: 0.25s;
+        }
+
+        #sign-up-btn:hover {
+            background-color: var(--gray);
+            color: var(--white);
+            border: 1px solid var(--white);
         }
     }
 }
