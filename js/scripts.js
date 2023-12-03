@@ -1,3 +1,10 @@
+Fancybox.bind()
+
+const container = document.getElementById("myCarousel");
+const options = { infinite: true };
+
+new Carousel(container, options);
+
 // Nav
 var mainNav = document.getElementById("mainNav");
 var burgerBtn = document.getElementById("burgerBtn")

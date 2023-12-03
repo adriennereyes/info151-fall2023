@@ -15,8 +15,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 
+    <!-- Fancy Box -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+
+    <!-- Fancy Carousel -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"/>
+
+
     <link rel="stylesheet" href="css/styles.css">
-    <title>Week 8/9 - Sign Up Modal</title>
+    <title>Week 10 - Fancy Apps</title>
 </head>
 
 <body>
@@ -76,11 +83,50 @@
         </div>
     </header>
     <section id="hero"></section>
+
+    <section id="fancybox">
+        <div id="fb-grid-item">
+            <h1>Fancybox</h1>
+            <ul>
+                <li>
+                    <a href="img/fancy/kobe1.jpg" data-fancybox, data-fancybox="gallery-1", data-caption="Sea Turtle"><img src="img/fancy/kobe1.jpg" alt="kobe"></a>
+                </li>
+
+                <li>
+                    <a href="img/fancy/kobe2.jpg" data-fancybox, data-fancybox="gallery-2"><img src="img/fancy/kobe2.jpg" alt="kobe"></a>
+                </li>
+
+                <li>
+                    <a href="img/fancy/kobe3.jpg" data-fancybox, data-fancybox="gallery-1"><img src="img/fancy/kobe3.jpg" alt="kobe"></a>
+                </li>
+
+                <li>
+                    <a href="img/fancy/kobe4.jpg" data-fancybox, data-fancybox="gallery-2"><img src="img/fancy/kobe4.jpg" alt="kobe"></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="fancyCarousel">
+        <div id="fc-grid-item">
+            <h1>Fancy Carousel</h1>
+            <div class="f-carousel" id="myCarousel">
+                <div class="f-carousel__slide"><div class="slide" id="fc-1"></div></div>
+                <div class="f-carousel__slide"><div class="slide" id="fc-2"></div></div>
+                <div class="f-carousel__slide"><div class="slide" id="fc-3"></div></div>
+                <div class="f-carousel__slide"><div class="slide" id="fc-4"></div></div>
+            </div>
+        </div>
+    </section>
+
     <div id="validation-btn">
         <a href="https://validator.w3.org/nu/?doc=https://week-8-9-signup-modal--info151-are53.netlify.app/" target="_blank">
             <img src="img/html-logo.svg" alt="Valid HTML 5">
         </a>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
     <script src="js/scripts-dist.js"></script>
 </body>
 
