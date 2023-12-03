@@ -21,6 +21,8 @@
     <!-- Fancy Carousel -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"/>
 
+    <!-- Animate On Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="stylesheet" href="css/styles.css">
     <title>Week 10 - Fancy Apps</title>
@@ -84,8 +86,12 @@
     </header>
     <section id="hero"></section>
 
+    <div id="typing-effect-container">
+        <span id="typing-effect"></span>
+    </div>
+
     <section id="fancybox">
-        <div id="fb-grid-item">
+        <div id="fb-grid-item" data-aos="zoom-in" data-aos-duration="1500">
             <h1>Fancybox</h1>
             <ul>
                 <li>
@@ -127,6 +133,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="js/scripts-dist.js"></script>
 </body>
 

@@ -1,9 +1,27 @@
+AOS.init();
+
 Fancybox.bind()
 
 const container = document.getElementById("myCarousel");
 const options = { infinite: true };
 
 new Carousel(container, options);
+
+var typed = new Typed('#typing-effect', {
+    strings: [
+        'Kobe Bryant, a legendary figure in the world of basketball, left an indelible mark on the sport and its fans.',
+        'His relentless work ethic, unwavering dedication, and extraordinary talent propelled him to the pinnacle of success.',
+        'Kobe\'s legacy extends beyond the court; he was a mentor, a philanthropist, and an inspiration to millions.',
+        'His tragic and untimely passing was a profound loss that resonated around the world, reminding us of the fragility of life and the enduring impact of a legacy built on passion, determination, and the pursuit of greatness.',
+        'Mamba out.'
+        ],
+    typeSpeed: 50,
+    backSpeed: 10,
+    startDelay: 500,
+    loop: true,
+    loopCount: Infinity,
+    contentType: 'text'
+});
 
 // Nav
 var mainNav = document.getElementById("mainNav");

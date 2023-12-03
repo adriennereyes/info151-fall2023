@@ -909,3 +909,15 @@ header #sign-in-up-btns-container #sign-up-btn:hover {
 #fancyCarousel #fc-grid-item #fc-4 {
   background-image: url("../../img/fancy/kobe4.jpg");
 }
+
+/* =============
+    Fancy Box
+============= */
+#typing-effect-container {
+  text-align: center;
+  padding: 40px;
+}
+#typing-effect-container span {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
